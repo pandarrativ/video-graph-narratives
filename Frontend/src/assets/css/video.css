@@ -1,0 +1,151 @@
+/***************************** in page mode *****************************/
+.video-player-full-false .react-player-container{
+    width: 640px;
+    height: 360px;
+}
+
+.video-player-full-false #video-progress-bar{
+    margin-top: -20px;
+}
+
+.video-player-full-false .video-player-menu{
+    width: 640px;
+
+    display: grid;
+    grid-template-columns: auto 1fr auto auto auto;
+    gap: 15px;
+
+    align-items: center;
+}
+
+
+
+/* volume */
+#video-volume .MuiSlider-thumb{
+    display: none;
+}
+
+#video-volume:hover .MuiSlider-thumb,
+#video-volume:focus .MuiSlider-thumb{
+    display: inline;
+}
+
+#video-volume .css-1gv0vcd-MuiSlider-track{
+    border: none;
+}
+
+#video-volume:hover .css-1gv0vcd-MuiSlider-track,
+#video-volume:focus .css-1gv0vcd-MuiSlider-track{
+    border: 1px solid #EA80FC;
+}
+
+#video-volume #video-volume-slider{
+    width: 0; /* Initial width */
+    transition: width 0.3s ease;
+}
+
+#video-volume:hover #video-volume-slider,
+#video-volume:focus #video-volume-slider{
+    width: 200px;
+}
+
+#video-volume .video-volume-icon:not(:first-child) {
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#video-volume:hover .video-volume-icon:not(:first-child),
+#video-volume:focus .video-volume-icon:not(:first-child)  {
+    opacity: 1;
+    transform: scale(1);
+} 
+
+
+/* time */
+.video-player-full-false #video-time{
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.video-player-full-false #video-speed-container{
+    position: relative;
+}
+
+.video-player-full-false #video-speed-options{
+    position: absolute;
+    bottom: 45px;
+    left: -7px;
+}
+
+.video-player-full-false .video-volume-icon:hover,
+.video-player-full-false .video-volume-icon:focus{
+    cursor: pointer;
+}
+
+/***************************** full screen mode *****************************/
+.video-player-full-true{
+    position: 'fixed';
+    top: 0px;
+    left: 0px;
+    width: '100%';
+    height: '100%';
+}
+
+.video-player-full-true .react-player-container{
+    width: '100%';
+    height: '100%';
+    z-index: 1000;
+}
+
+.video-player-full-true .progress-bar-container{
+    width: 100%;
+    z-index: 1001;
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+}
+
+.video-player-full-true .video-player-menu{
+    width: 100%;
+    z-index: 1001;
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: auto 1fr auto auto auto;
+    gap: 30px;
+    padding: 0 20px;
+
+    align-items: center;
+}
+
+.video-player-full-true #video-volume{
+    width: 200px;
+}
+
+.video-player-full-true #video-time{
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.video-player-full-true #video-speed-container{
+    position: relative;
+}
+
+.video-player-full-true #video-speed-options{
+    position: absolute;
+    bottom: 45px;
+    left: -7px;
+}
+
+.video-player-full-true .video-volume-icon:hover,
+.video-player-full-true .video-volume-icon:focus{
+    cursor: pointer;
+}

@@ -1,0 +1,38 @@
+.graph-panel{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding-right: 10px;
+}
+
+
+.graph-panel-container{
+    width: 800px;
+    height: 340px;
+    background-color: #666;
+    border-radius: 10px;
+}
+
+.graph-panel-options{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.graph-panel-btns{
+    background-color: inherit;
+    border: none;
+    padding: 2px;
+}
+.graph-panel-btns:hover{
+    cursor: pointer;
+}
+
+.disable_drag_true{
+    background-color: red;
+    border-radius: 5px;
+}
+
+.drag_btn:hover{
+    cursor: pointer
+}

@@ -1,1 +1,1 @@
-# DomainVideo
+# Pipeline: Image -> Text -> Graph
